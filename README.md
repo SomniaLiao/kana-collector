@@ -2,6 +2,10 @@
 
 使用 Phaser.js 製作的平假名與赫本式羅馬拼音辨識遊戲。玩家以角色蒐集答案，五關共 25 字，答對得 1 分。
 
+## 線上遊玩
+
+[開啟假名蒐集任務](https://somnialiao.github.io/kana-collector/)
+
 ## 本機啟動
 
 需求：Node.js 20.19 以上版本（或 22.12 以上版本）與 npm。
