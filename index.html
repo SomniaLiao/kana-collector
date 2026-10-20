@@ -2,13 +2,72 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#17233b" />
-    <meta name="description" content="操作角色蒐集正確配對，練習日語平假名與羅馬拼音。" />
-    <title>假名蒐集任務</title>
+    <meta name="description" content="選擇遊戲式學習活動，練習日語平假名、片假名與羅馬拼音。" />
+    <title>假名遊戲學習站</title>
+    <link rel="stylesheet" href="/src/landing.css" />
   </head>
   <body>
-    <main id="game-container" aria-label="日語假名與羅馬拼音辨識遊戲"></main>
-    <script type="module" src="/src/main.js"></script>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="./">假名遊戲學習站</a>
+        <nav class="game-nav" aria-label="遊戲連結">
+          <a href="./collector/"><span>01</span>假名蒐集任務</a>
+          <a href="./memory/"><span>02</span>翻牌記憶室</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <p class="eyebrow">日語假名・遊戲式學習</p>
+          <h1>選一種方式，<br />開始記住假名。</h1>
+          <p class="hero-copy">用角色蒐集與翻牌配對，練習假名和羅馬拼音。兩款遊戲可依學習目標自由切換。</p>
+          <div class="hero-tags" aria-label="學習內容">
+            <span>平假名</span>
+            <span>片假名</span>
+            <span>羅馬拼音</span>
+          </div>
+        </section>
+        <section class="game-section" aria-labelledby="games-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">遊戲一覽</p>
+              <h2 id="games-title">挑選你的練習方式</h2>
+            </div>
+            <p>依製作順序排列</p>
+          </div>
+          <div class="game-grid">
+            <article class="game-card collector-card">
+              <div class="card-topline">
+                <span class="game-number">01</span>
+                <span class="game-type">角色蒐集・方向操作</span>
+              </div>
+              <h3>假名蒐集任務</h3>
+              <p>閱讀假名或羅馬拼音提示，操控角色蒐集正確答案。五個關卡練習あ行至な行，共 25 個平假名，每題答對得 1 分。</p>
+              <div class="card-meta"><span>5 個關卡</span><span>鍵盤與觸控</span></div>
+              <a class="game-link" href="./collector/"><span>01 假名蒐集任務</span><span aria-hidden="true">→</span></a>
+            </article>
+            <article class="game-card memory-card">
+              <div class="card-topline">
+                <span class="game-number">02</span>
+                <span class="game-type">翻牌配對・記憶提取</span>
+              </div>
+              <h3>翻牌記憶室</h3>
+              <p>翻開兩張卡片，從記憶中找出假名與羅馬拼音的配對。平假名與片假名各有 104 組音節，答對一組得 1 分。</p>
+              <div class="card-meta"><span>208 組音節</span><span>清音、濁音、拗音</span></div>
+              <a class="game-link" href="./memory/"><span>02 翻牌記憶室</span><span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </section>
+        <section class="learning-note">
+          <span class="note-icon" aria-hidden="true">あ</span>
+          <p>兩款遊戲都使用赫本式羅馬拼音，例如 <span lang="en">shi</span>、<span lang="en">chi</span>、<span lang="en">tsu</span>。可先從熟悉的清音開始，再練習濁音、半濁音與拗音。</p>
+        </section>
+      </main>
+      <footer class="footer">
+        <span>日語假名遊戲學習站</span>
+        <span>選擇編號連結即可開始遊戲</span>
+      </footer>
+    </div>
   </body>
 </html>

@@ -10,12 +10,15 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <a class="back-link" href="../" aria-label="回到假名蒐集任務首頁">← 回到假名蒐集任務</a>
-        <span class="topbar-label">記憶配對室 <span lang="en">MEMORY MATCH</span></span>
+        <a class="site-brand" href="../">假名遊戲學習站</a>
+        <nav class="game-nav" aria-label="遊戲連結">
+          <a href="../collector/"><span>01</span>假名蒐集任務</a>
+          <a href="../memory/" aria-current="page"><span>02</span>翻牌記憶室</a>
+        </nav>
       </header>
       <main>
         <section class="intro">
-          <p class="eyebrow">遊戲式學習・配對與記憶提取</p>
+          <p class="eyebrow">02・遊戲式學習・配對與記憶提取</p>
           <div class="intro-heading">
             <div>
               <h1>翻牌記憶室</h1>
@@ -77,8 +80,11 @@
         </section>
       </main>
       <footer class="footer">
-        <a href="../">返回假名蒐集任務</a>
-        <span>每回合依五十音列出牌，讓相同羅馬拼音不會同時出現多個答案。</span>
+        <a href="../">回到遊戲入口</a>
+        <nav class="footer-game-links" aria-label="切換遊戲">
+          <a href="../collector/"><span>01</span>假名蒐集任務</a>
+          <a href="../memory/"><span>02</span>翻牌記憶室</a>
+        </nav>
       </footer>
     </div>
     <script type="module" src="/src/memory/main.js"></script>

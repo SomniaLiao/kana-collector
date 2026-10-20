@@ -8,7 +8,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: page("./index.html"),
+        home: page("./index.html"),
+        collector: page("./collector/index.html"),
         memory: page("./memory/index.html"),
       },
     },

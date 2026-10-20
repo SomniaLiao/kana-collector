@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#17233b" />
+    <meta name="description" content="操控角色蒐集正確配對，練習日語平假名與羅馬拼音。" />
+    <title>假名蒐集任務</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="site-brand" href="../">假名遊戲學習站</a>
+        <nav class="game-nav" aria-label="遊戲連結">
+          <a href="../collector/" aria-current="page"><span>01</span>假名蒐集任務</a>
+          <a href="../memory/"><span>02</span>翻牌記憶室</a>
+        </nav>
+      </header>
+      <main>
+        <section class="intro">
+          <p class="eyebrow">01・角色蒐集與辨識</p>
+          <div class="intro-heading">
+            <div>
+              <h1>假名蒐集任務</h1>
+              <p class="lead">閱讀提示，操控角色蒐集正確答案。每題答對得 1 分，完成五個關卡來練習基本平假名。</p>
+            </div>
+            <div class="coverage-badge">
+              <span class="coverage-number">25</span>
+              <span>個基本假名<br />5 個關卡</span>
+            </div>
+          </div>
+        </section>
+        <section class="game-panel" aria-label="假名蒐集任務遊戲">
+          <div class="panel-heading">
+            <div>
+              <h2>開始遊戲</h2>
+              <p>鍵盤使用方向鍵或 WASD，手機可使用遊戲畫面中的方向按鈕。</p>
+            </div>
+            <a class="text-game-link" href="../memory/"><span>02</span> 前往翻牌記憶室 →</a>
+          </div>
+          <div id="game-container" aria-label="日語假名與羅馬拼音辨識遊戲"></div>
+          <div class="game-hint">
+            <span class="hint-mark" aria-hidden="true">?</span>
+            <p>遊戲範圍為あ行至な行。答錯可重新嘗試，不扣分。</p>
+          </div>
+        </section>
+        <section class="learning-note">
+          <p class="eyebrow">學習方式</p>
+          <h2>讀提示，移動角色，提取記憶</h2>
+          <p>題目會交替顯示假名與羅馬拼音。先從記憶中辨認答案，再移動角色蒐集配對；答對得分並進入下一題。</p>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="../">回到遊戲入口</a>
+        <nav class="footer-game-links" aria-label="切換遊戲">
+          <a href="../collector/"><span>01</span>假名蒐集任務</a>
+          <a href="../memory/"><span>02</span>翻牌記憶室</a>
+        </nav>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
