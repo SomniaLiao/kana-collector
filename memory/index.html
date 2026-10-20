@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17233b" />
+    <meta name="description" content="透過翻牌配對與記憶提取，練習平假名、片假名與羅馬拼音。" />
+    <title>假名記憶配對室</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="back-link" href="../" aria-label="回到假名蒐集任務首頁">← 回到假名蒐集任務</a>
+        <span class="topbar-label">記憶配對室 <span lang="en">MEMORY MATCH</span></span>
+      </header>
+      <main>
+        <section class="intro">
+          <p class="eyebrow">遊戲式學習・配對與記憶提取</p>
+          <div class="intro-heading">
+            <div>
+              <h1>翻牌記憶室</h1>
+              <p class="lead">先從記憶中找答案，再翻開卡片確認。每組正確配對得 1 分。</p>
+            </div>
+            <div class="coverage-badge">
+              <span class="coverage-number">208</span>
+              <span>組假名音節<br />平假名與片假名</span>
+            </div>
+          </div>
+        </section>
+        <section class="game-panel" aria-label="假名記憶配對遊戲">
+          <div class="game-options">
+            <div class="option-group">
+              <span class="option-label" id="script-label">文字系統</span>
+              <div class="segmented-control" role="group" aria-labelledby="script-label">
+                <button class="option-button is-selected" type="button" data-script="hiragana" aria-pressed="true">平假名</button>
+                <button class="option-button" type="button" data-script="katakana" aria-pressed="false">片假名</button>
+              </div>
+            </div>
+            <div class="option-group category-group">
+              <span class="option-label" id="category-label">練習範圍</span>
+              <div class="category-control" role="group" aria-labelledby="category-label">
+                <button class="category-button is-selected" type="button" data-category="all" aria-pressed="true">全部 <span>104</span></button>
+                <button class="category-button" type="button" data-category="basic" aria-pressed="false">清音 <span>46</span></button>
+                <button class="category-button" type="button" data-category="voiced" aria-pressed="false">濁音・半濁音 <span>25</span></button>
+                <button class="category-button" type="button" data-category="yoon" aria-pressed="false">拗音 <span>33</span></button>
+              </div>
+            </div>
+          </div>
+          <div id="game-container" aria-label="配對遊戲畫面。使用滑鼠或觸控翻牌，也可用方向鍵選牌並按 Enter 翻牌。"></div>
+          <div class="game-hint">
+            <span class="hint-mark" aria-hidden="true">?</span>
+            <p>翻開兩張牌，配對假名與羅馬拼音。可用滑鼠、觸控，或方向鍵選牌並按 Enter。</p>
+          </div>
+        </section>
+        <section class="rule-section" aria-labelledby="rule-title">
+          <div class="section-heading">
+            <p class="eyebrow">額外學習卡</p>
+            <h2 id="rule-title">兩個常見發音規則</h2>
+          </div>
+          <div class="rule-grid">
+            <article class="rule-card">
+              <div class="rule-symbol">っ</div>
+              <div>
+                <h3>促音</h3>
+                <p>小寫的「っ／ッ」讓後面的子音停頓並加倍，例如「きって」寫作 <span lang="en">kitte</span>。</p>
+              </div>
+            </article>
+            <article class="rule-card">
+              <div class="rule-symbol long-mark">ー</div>
+              <div>
+                <h3>長音</h3>
+                <p>「ー」延長前一個母音一拍，常見於片假名，例如「スーパー」寫作 <span lang="en">suupaa</span>。</p>
+              </div>
+            </article>
+          </div>
+          <p class="scope-note">本版收錄清音、濁音、半濁音與拗音。ティ、ファ等外來音組合可作為後續擴充。</p>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="../">返回假名蒐集任務</a>
+        <span>每回合依五十音列出牌，讓相同羅馬拼音不會同時出現多個答案。</span>
+      </footer>
+    </div>
+    <script type="module" src="/src/memory/main.js"></script>
+  </body>
+</html>
