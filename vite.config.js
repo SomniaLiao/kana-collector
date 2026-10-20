@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 const page = (path) => fileURLToPath(new URL(path, import.meta.url));
 
 export default defineConfig({
-  base: "/kana-collector/",
+  base: "/kana-games/",
   build: {
     rollupOptions: {
       input: {

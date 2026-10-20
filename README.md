@@ -4,7 +4,7 @@
 
 ## 線上遊玩
 
-[開啟假名蒐集任務](https://somnialiao.github.io/kana-collector/)
+[開啟假名遊戲學習站](https://somnialiao.github.io/kana-games/)
 
 ## 本機啟動
 
